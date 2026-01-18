@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+   
+  </style>
+  <body>
+    <!--<input type="radio" name="size">-->
+    <section class="sec1">
+      <img
+        src="Screenshot 2026-01-14 230855.png"
+        class="w-200 h-50 lg:h-55 lg:w-400"
+        alt=""
+      />
+      <p class="text-3xl font-bold text-center">Pizza Order Form</p>
+      <p class="text-gray-600 px-3 lg:px-30 mt-10">Menu</p>
+      <div class="grid grid-cols-12 lg:grid-cols-9 gap-2 px-2 lg:px-30  items-center mt-10   
+     ">
+        <div class="col-span-4 lg:col-span-2 flex items-center gap-2">
+          <input
+            type="checkbox"
+            class="w-5 h-3 border-3 border-gray-300  lg:h-5"
+          />
+          <img src="ipiza1.png" class="h-20 lg:h-30" alt="" />
+        </div>
+        <!--check-->
+        <div class="col-span-5 lg:col-span-5">
+          <p class="font-bold text-sm lg:text-md">Pizza Mare e Monti</p>
+          <p class="text-gray-600 text-sm">ingredients will be written here.</p>
+
+          <div class="flex-column md:flex lg:flex gap-2 mt-2">
+            <p class="text-sm text-gray-600">Quantity</p>
+            <select class="border-2 border-gray-300 px-1">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+            <p class="text-sm text-gray-600">size</p>
+            <select class="border-2 border-gray-300">
+              <option value="">small</option>
+              <option value="">medium</option>
+              <option value="">large</option>
+            </select>
+          </div>
+          <!--option ki-->
+        </div>
+        <div class="col-span-1 mb-40 md:mb-30 lg:mb-20 ms-2  lg:col-span-2">
+          <p class="font-bold text-sm lg:text-md">$13.00</p>
+        </div>
+        <!--price-->
+      </div>
+      <!---main-->
+       <div class="grid grid-cols-12 lg:grid-cols-9 gap-2 px-2 lg:px-30  items-center mt-10  
+        ">
+        <div class="col-span-4 lg:col-span-2 flex items-center gap-2">
+          <input
+            type="checkbox"
+            class="w-5 h-3 border-2 border-gray-400 lg:h-5"
+          />
+          <img src="ipiza2.png" class="h-20 lg:h-30" alt="" />
+        </div>
+        <!--check-->
+        <div class="col-span-5 lg:col-span-5">
+          <p class="font-bold text-sm lg:text-md">Pizza Mare e Monti</p>
+          <p class="text-gray-600 text-sm">ingredients will be written here.</p>
+
+          <div class="flex-column md:flex lg:flex gap-2 mt-2">
+            <p class="text-sm text-gray-600">Quantity</p>
+            <select class="border-2 border-gray-300 px-1">
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+            </select>
+            <p class="text-sm text-gray-600">size</p>
+            <select class="border-2 border-gray-300">
+              <option value="">small</option>
+              <option value="">medium</option>
+              <option value="">large</option>
+            </select>
+          </div>
+          <!--option ki-->
+        </div>
+        <div class="col-span-1 mb-40 md:mb-30 lg:mb-20 ms-2  lg:col-span-2">
+          <p class="font-bold text-sm lg:text-md">$14.45</p>
+        </div>
+        <!--price-->
+      </div>
+      <!---main-->
+
+         <div class="flex gap-10 mt-4 mb-5 lg:mt-10 justify-center ">
+          <p>total</p>
+          <input type="text" placeholder="$30.00" class="w-20 border-b-2 outline-none focus:border-orange-500 border-gray-300 outline-none">
+         </div>
+
+
+    </section>
+    <section class="px-4 mt-10">
+      <p>Pickup Date</p>
+      <input type="text " class="border-b-2 focus:border-orange-500 border-gray-400 outline-none w-60 mt-4" placeholder="01.15.2026">
+      <p class="mt-10">Pickup time</p>
+      <div class="flx-column lg:flex gap-1 items-center mt-4">
+       <input type="text" class="w-20 focus:border-orange-500 border-gray-300 border-2 " placeholder="HH.MM">
+       <select class="border-2 border-gray-300" ><option value="">Am</option>
+      <option value="">Pm</option></select>
+      <p>Until</p>
+       <input type="text" class=" w-20 border-2 focus:border-orange-500 border-gray-300" placeholder="HH.MM">
+       <select class="border-2 border-gray-300" ><option value="">Am</option>
+      <option value="">Pm</option></select>
+      </div>
+      <div class="flex-column lg:flex gap-5 mt-10">
+        <div class="flex">
+       <p>Name</p>
+        <input type="text" class="border-b-2 outline-none focus:border-orange-500 border-gray-400">
+        </div>
+        <div class="flex">
+        <p>Last name</p>
+           <input type="text" class="border-b-2 outline-none focus:border-orange-500 border-gray-400" >
+           </div>
+   </div>
+<div class="flex-column lg:flex gap-2 mt-5">
+           <p>Email</p>
+           <input type="Email" class="border-b-2 outline-none focus:border-orange-500 border-gray-400">
+           <p>Phone no</p>
+           <input type="tel" placeholder="0.0000000" class="border-b-2 focus:border-orange-500 outline-none px-2 border-gray-400">
+  </div>
+      <p class="mt-10">Additional note</p>     
+  <textarea type="Message" row="10" cols="30" lg:cols="50" class="border-b-2 focus:border-orange-500 outline-none px-5 border-gray-400 "></textarea>
+  <div class="">
+           <button class="bg-orange-500 text-white px-14 mt-10 rounded-md py-2 mb-20 active:scale-95">Order</button>
+            <a href="taskst.html" class=" border-2 font-bold  text-orange-400 px-7 py-2 rounded-lg active:scale-95 ">Back</a>
+      </div>
+    </section>
+   
+  </body>
+</html>

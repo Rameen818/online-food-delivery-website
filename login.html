@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    .sec1 {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 206, 103, 0.22) -42.47%,
+        rgba(253, 237, 202, 0) 100%
+      );
+
+      height: 100vh;
+    }
+  </style>
+  <body>
+    <section class="sec1 px-6 py-5">
+      <img src="Logo (3).png" alt="" />
+      <div class="grid grid-cols-12 ">
+        <div class="col-span-6">
+      <div class="flex flex-col">
+        <!--column ma direction ky lia-->
+
+        <p class="text-orange-400 font-bold mt-10 text-xl mb-5">
+          Login your account
+        </p>
+        <label for="Name">Name:</label>
+        <input
+          type="text"
+          class="outline-none border-orange-400 border-b-3 w-70 mt-5 mb-3"
+        />
+        <label for="name">Last Name:</label>
+        <input
+          type="text"
+          class="outline-none border-orange-400 border-b-3 w-70 mt-5 mb-3"
+        />
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          placeholder=""
+          class="outline-none border-orange-400 border-b-3 w-70 mt-5 mb-3"
+        />
+        <label for="address">Address:</label>
+        <input
+          type="Address"
+          class="outline-none border-orange-400 border-b-3 w-70 mt-5 mb-3"
+        />
+      </div>
+      <div class="flex gap-2">
+      <button
+        class="bg-orange-500 text-white px-6 py-3 rounded-lg active:scale-95"
+      >
+        Login
+      </button>
+      <a
+        href="taskst.html"
+        class="border-2 font-bold text-orange-400 px-7 py-3 rounded-lg active:scale-95"
+        >Back</a
+      >
+      </div>
+    </div>
+      <div class="col-span-6">
+      <img src="bbur.jpg" class="hidden lg:block mt-30 h-65" alt="">
+</div>
+</div>
+      <div class="hidden lg:flex gap-5 items-center justify-center mt-10">
+        <div class="flex gap-2">
+          <p class="font-bold text-sm">Deliverd</p>
+          <p class="font-bold text-sm">to:</p>
+        </div>
+        <div class="flex gap-1 items-center">
+          <img src="map-marker-alt.png" class="h-4" alt="" />
+
+          <p class="text-gray-600 text-sm">Current location</p>
+          <p class="text-sm">Mohammadpur bus stand,Dhaka</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

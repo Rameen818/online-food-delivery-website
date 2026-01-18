@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <style>
+    .sec1 {
+      background-color: rgb(255, 196, 0);
+      min-height: 100vh;
+    }
+    .img1 {
+      height: 300px;
+      margin-top: 300px;
+    }
+    .img2 {
+      height: 30px;
+    }
+    .sec3 {
+      background: linear-gradient(
+        180deg,
+        rgba(255, 206, 103, 0.22) -42.47%,
+        rgba(253, 237, 202, 0) 100%
+      );
+      min-height: 50vh;
+    }
+    .sec6 {
+      background: rgba(254, 250, 241, 1);
+      min-height: 50vh;
+    }
+    .sec7 {
+      background: linear-gradient(261.24deg, #ffae00 63.85%, #ff8a00 111.94%);
+      min-height: 100vh;
+    }
+    .sec9 {
+      background-image: url(bim.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 50vh;
+    }
+    .sec10 {
+      background-color: rgb(27, 23, 23);
+      min-height: 100vh;
+    }
+  </style>
+  <body>
+    <section class="sec1">
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 bg-white p-5 items-center"
+      >
+        <div class="">
+          <img src="Logo (3).png" class="img2 ms-5" alt="" />
+        </div>
+        <div class="hidden lg:flex gap-5 items-center">
+          <div class="flex gap-2">
+            <p class="font-bold text-sm">Deliverd</p>
+            <p class="font-bold text-sm">to:</p>
+          </div>
+          <div class="flex gap-1 items-center">
+            <img src="map-marker-alt.png" class="h-4" alt="" />
+
+            <p class="text-gray-600 text-sm">Current location</p>
+            <p class="text-sm">Mohammadpur bus stand,Dhaka</p>
+          </div>
+        </div>
+        <div class="flex gap-2 items-center ms-10">
+          <div class="flex gap-1 items-center">
+            <img src="Search (1).png" class="h-3 mt-1" alt="" />
+            <input
+              type="text"
+              placeholder="search food"
+              class="font-bold text-gray-600 text-sm outline-none w-22"
+            />
+          </div>
+          <!--300 color ki darkness or 50 uski visibility... or xl, 2xl,lg ya size dyta hn-->
+          <div
+            class="shadow-md shadow-orange-300/60 flex gap-1 items-center p-2 rounded-md transition-all transform active:scale-95"
+          >
+            <!--active:scale-->
+            <img src="user.png" class="h-3" alt="" />
+            <a href="login.html" class="btn1 bg-white-300 text-orange-400">
+              Login</a
+            >
+            <button class="btn1 bg-white-300 text-orange-400">
+              <!---->
+            </button>
+          </div>
+        </div>
+      </div>
+      <!--sec1 ky under ki-->
+      <div
+        class="grid grig-cols-1 md:grid-cols-2 gap-30 items-center px-3 sm:px-4 md:px-5 lg:px-50"
+      >
+        <div>
+          <p class="text-white text-5xl font-bold mb-3">Are you Starving?</p>
+          <p>Within a few clicks, find meals that are accessible near you</p>
+          <div class="bg-white rounded-lg p-4 mt-3">
+            <div class="flex gap-3">
+              <div
+                class="flex gap-1 w-20 items-center p-1 rounded bg-orange-100"
+              >
+                <img src="cyc.png" class="h-2" alt="" />
+                <p class="text-sm text-orange-400">Delivery</p>
+              </div>
+              <div class="flex items-center gap-1">
+                <img src="Icon.png" class="h-3" alt="" />
+                <p>Pickup</p>
+              </div>
+            </div>
+            <!--cylcle-->
+            <div class="grid grid-cols-12 gap-2 items-center">
+              <div
+                class="col-span-12 md:col-span-12 lg:col-span-12 xl:col-span-8 flex gap-1 items-center mt-5 bg-gray-200 rounded p-1"
+              >
+                <img src="loco.png" class="h-5" alt="" />
+                <input
+                  type="text"
+                  placeholder="Enter Your Address"
+                  class="outline-none"
+                />
+              </div>
+              <div
+                class="col-span-8 lg:col-span-8 md:col-span-8 xl:col-span-4 flex gap-1 bg-orange-500 items-center rounded-md justify-center active:scale-95 transition-all px-6 py-3 sm:px-4 sm:py-2 mt-3"
+              >
+                <img src="wsear.png" class="h-3" alt="" />
+                <button class="text-white text-sm">Find Food</button>
+              </div>
+              <!--btn ki-->
+            </div>
+          </div>
+          <!--white box-->
+        </div>
+        <div class="lg:mt-63 md:mt-50 justify-center">
+          <img
+            src="Image Base.png"
+            class="h-[300px] object-contain hidden md:block"
+            alt=""
+          /><!--block sy show or by default hidden-->
+        </div>
+      </div>
+    </section>
+    <section class="sec2 mt-20 px-10 md:px-30 lg:px-30">
+      <div class="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 gap-2">
+        <div class="mb-10">
+          <div class="relative">
+            <img src="img1.png" class="h-50" alt="" />
+            <div
+              class="absolute bottom-0 left-0 bg-orange-400 w-20 rounded-xl flex items-center"
+            >
+              <p class="font-bold text-white text-5xl">15</p>
+              <div>
+                <p class="text-white text-xl">%</p>
+                <p class="text-white text-sm">off</p>
+              </div>
+            </div>
+            <!--img off-->
+          </div>
+          <p class="text-sm font-bold">Greys vage</p>
+          <p
+            class="bg-orange-200 w-30 rounded-md text-sm font-bold text-orange-400"
+          >
+            6 Days Remaining
+          </p>
+        </div>
+        <div class="mb-10">
+          <div class="relative">
+            <img src="img2.png" class="h-50 rounded-md" alt="" />
+            <div
+              class="absolute bottom-0 left-0 bg-orange-400 w-20 rounded-xl flex items-center"
+            >
+              <p class="font-bold text-white text-5xl">10</p>
+              <div>
+                <p class="text-white text-xl">%</p>
+                <p class="text-white text-sm">off</p>
+              </div>
+            </div>
+            <!--img off-->
+          </div>
+          <p class="text-sm font-bold">Greys vage</p>
+          <p
+            class="bg-orange-200 w-30 rounded-md text-sm font-bold text-orange-400"
+          >
+            6 Days Remaining
+          </p>
+        </div>
+        <div class="mb-10">
+          <div class="relative">
+            <img src="img3.png" class="h-50" alt="" />
+            <div
+              class="absolute bottom-0 left-0 bg-orange-400 w-20 rounded-xl flex items-center"
+            >
+              <p class="font-bold text-white text-5xl">25</p>
+              <div>
+                <p class="text-white text-xl">%</p>
+                <p class="text-white text-sm">off</p>
+              </div>
+            </div>
+            <!--img off-->
+          </div>
+          <p class="text-sm font-bold">Greys vage</p>
+          <p
+            class="bg-orange-200 w-30 rounded-md text-sm font-bold text-orange-400"
+          >
+            6 Days Remaining
+          </p>
+        </div>
+        <div>
+          <div class="relative">
+            <img src="img4.png" class="h-50" alt="" />
+            <div
+              class="absolute bottom-0 left-0 bg-orange-400 w-20 rounded-xl flex items-center"
+            >
+              <p class="font-bold text-white text-5xl">20</p>
+              <div>
+                <p class="text-white text-xl">%</p>
+                <p class="text-white text-sm">off</p>
+              </div>
+            </div>
+            <!--img off-->
+          </div>
+          <p class="text-sm font-bold">Greys vage</p>
+          <p
+            class="bg-orange-200 w-30 rounded-md text-sm font-bold text-orange-400"
+          >
+            6 Days Remaining
+          </p>
+        </div>
+      </div>
+      <!--column ki-->
+    </section>
+    <!--pict-->
+
+    <section class="sec3 mt-5">
+      <p class="font-bold text-orange-400 text-2xl text-center p-10">
+        How does it work
+      </p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 px-10 lg:px-50"
+      >
+        <div class="place-items-center">
+          <img src="ilo.png" class="h-20" alt="" />
+          <p class="font-bold text-center">Select location</p>
+          <p class="text-sm text-gray-600 text-center">
+            Choose the location where your
+          </p>
+          <p class="text-sm text-gray-600 text-center">
+            food will be delivered.
+          </p>
+        </div>
+        <!--akicon-->
+        <div class="place-items-center">
+          <img src="bel.png" class="h-20" alt="" />
+          <p class="font-bold text-center">Select location</p>
+          <p class="text-sm text-gray-600 text-center">
+            Choose the location where your
+          </p>
+          <p class="text-sm text-gray-600 text-center">
+            food will be delivered.
+          </p>
+        </div>
+        <!--akicon-->
+        <div class="place-items-center">
+          <img src="dol.png" class="h-20" alt="" />
+          <p class="font-bold text-center">Select location</p>
+          <p class="text-sm text-gray-600 text-center">
+            Choose the location where your
+          </p>
+          <p class="text-sm text-gray-600 text-center">
+            food will be delivered.
+          </p>
+        </div>
+        <!--akicon-->
+        <div class="place-items-center">
+          <img src="Donut.png" class="h-20" alt="" />
+          <p class="font-bold text-center">Select location</p>
+          <p class="text-sm text-gray-600 text-center">
+            Choose the location where your
+          </p>
+          <p class="text-sm text-gray-600 text-center">
+            food will be delivered.
+          </p>
+        </div>
+        <!--akicon-->
+      </div>
+      <!--column icon-->
+    </section>
+    <!--icons-->
+
+    <section class="sec4 mt-20">
+      <p class="font-bold text-2xl text-center">Popular items</p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 px-10 md:px-35 lg:px-30 mt-20"
+      >
+        <div>
+          <div>
+            <img src="piza.jpg" alt="" class="h-45 w-45 rounded-md" />
+            <div class="px-3">
+              <p class="font-bold text-sm text-gray-600 mt-2">Cheese pizza</p>
+              <div class="flex gap-1 items-center text-start">
+                <img src="map-marker-alt.png" class="h-3" alt="" />
+                <p class="text-orange-400 text-sm">top sticks</p>
+              </div>
+              <p class="font-bold text-sm mb-3">$4,.59</p>
+            </div>
+          </div>
+          <div>
+            <a
+              href="order.html"
+              class="text-white text-center text-sm bg-orange-500 px-14 py-2 rounded-md"
+              >Order Now</a
+            >
+          </div>
+        </div>
+        <!--card-->
+        <div>
+          <div>
+            <img src="bur.png" alt="" class="h-45" />
+            <div class="px-3">
+              <p class="font-bold text-sm text-gray-600 mt-2">Cheese burger</p>
+              <div class="flex gap-1 items-center text-start">
+                <img src="map-marker-alt.png" class="h-3" alt="" />
+                <p class="text-orange-400 text-sm">Burgur Arena</p>
+              </div>
+              <p class="font-bold text-sm mb-3">$3,.39</p>
+            </div>
+          </div>
+          <div>
+            <a
+              href=""
+              class="text-white text-center text-sm bg-orange-500 px-14 py-2 rounded-md"
+              >Order Now</a
+            >
+          </div>
+        </div>
+        <!--card-->
+        <div>
+          <div>
+            <img src="dal.png" alt="" class="h-45" />
+            <div class="px-3">
+              <p class="font-bold text-sm text-gray-600 mt-2">Thai soup</p>
+              <div class="flex gap-1 items-center text-start">
+                <img src="map-marker-alt.png" class="h-3" alt="" />
+                <p class="text-orange-400 text-sm">foody man</p>
+              </div>
+              <p class="font-bold text-sm mb-3">$8,.12</p>
+            </div>
+          </div>
+          <div>
+            <a
+              href=""
+              class="text-white text-center text-sm bg-orange-500 px-14 py-2 rounded-md"
+              >Order Now</a
+            >
+          </div>
+        </div>
+        <!--card-->
+        <div class="">
+          <div>
+            <img src="san.png" alt="" class="h-45" />
+            <div class="px-3">
+              <p class="font-bold text-sm text-gray-600 mt-2">
+                Crispy sandwitch
+              </p>
+              <div class="flex gap-1 items-center text-start">
+                <img src="map-marker-alt.png" class="h-3" alt="" />
+                <p class="text-orange-400 text-sm">Fastfood dine</p>
+              </div>
+              <p class="font-bold text-sm mb-3">$1,.29</p>
+            </div>
+          </div>
+          <div>
+            <a
+              href="order.html"
+              class="text-white text-center text-sm bg-orange-500 px-14 py-2 rounded-md active:scale-95 transition-all"
+              >Order Now</a
+            >
+          </div>
+        </div>
+        <!--card-->
+      </div>
+      <!--grid-->
+    </section>
+    <section class="sec5 mt-20">
+      <p class="text-2xl font-bold text-center">Featured resturant</p>
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3 mt-20 px-20 md:px-40 lg:px-40"
+      >
+        <div class="mb-10">
+          <div class="relative">
+            <img src="c7.png" class="h-40 rounded-md" alt="" />
+            <div class="flex gap-2 absolute top-0 px-2 py-3">
+              <div
+                class="flex gap-2 py-1 text-center px-1 w-20 bg-orange-500 rounded-md"
+              >
+                <img src="token.png" class="h-3 mt-1" alt="" />
+                <p class="text-white font-bold text-sm">20% off</p>
+              </div>
+              <!--ak-->
+
+              <div
+                class="flex gap-2 py-1 items-center px-1 w-15 bg-orange-400 rounded-md"
+              >
+                <img src="clock.png" class="h-3" alt="" />
+                <p class="text-white font-bold text-sm">Fast</p>
+              </div>
+              <!--ak-->
+            </div>
+            <!--off-->
+          </div>
+          <!--img wali-->
+          <div class="flex gap-1 items-center mt-3">
+            <img src="relo1.png" class="h-10" alt="" />
+            <div>
+              <p class="font-bold">Food Worl</p>
+              <p class="text-yellow-400">⭐ 46</p>
+            </div>
+          </div>
+          <p class="text-orange-400 bg-orange-200 rounded-md w-45 mt-3">
+            Open tomorrow
+          </p>
+        </div>
+        <!--card-->
+        <div>
+          <div class="relative">
+            <img src="c1.png" class="h-40 rounded-md" alt="" />
+            <div class="flex gap-2 absolute top-0 px-2 py-3">
+              <div
+                class="flex gap-2 py-1 text-center px-1 w-20 bg-orange-500 rounded-md"
+              >
+                <img src="token.png" class="h-3 mt-1" alt="" />
+                <p class="text-white font-bold text-sm">15% off</p>
+              </div>
+              <!--ak-->
+
+              <div
+                class="flex gap-2 py-1 items-center px-1 w-15 bg-orange-400 rounded-md"
+              >
+                <img src="clock.png" class="h-3" alt="" />
+                <p class="text-white font-bold text-sm">Fast</p>
+              </div>
+              <!--ak-->
+            </div>
+            <!--off-->
+          </div>
+          <!--img wli-->
+          <div class="flex gap-1 items-center mt-3">
+            <img src="reslo2.png" class="h-10" alt="" />
+            <div>
+              <p class="font-bold">Food Worl</p>
+              <p class="text-yellow-400">⭐ 46</p>
+            </div>
+          </div>
+          <p class="text-orange-400 bg-orange-200 rounded-md w-45 mt-3">
+            Open tomorrow
+          </p>
+        </div>
+        <!--card-->
+        <div>
+          <div class="relative">
+            <img src="c2.png" class="h-40 rounded-md" alt="" />
+            <div class="flex gap-2 absolute top-0 px-2 py-3">
+              <div
+                class="flex gap-2 py-1 text-center px-1 w-20 bg-orange-500 rounded-md"
+              >
+                <img src="token.png" class="h-3 mt-1" alt="" />
+                <p class="text-white font-bold text-sm">10% off</p>
+              </div>
+              <!--ak-->
+
+              <div
+                class="flex gap-2 py-1 items-center px-1 w-15 bg-orange-400 rounded-md"
+              >
+                <img src="clock.png" class="h-3" alt="" />
+                <p class="text-white font-bold text-sm">Fast</p>
+              </div>
+              <!--ak-->
+            </div>
+            <!--off-->
+          </div>
+          <!--img wli-->
+          <div class="flex gap-1 items-center mt-3">
+            <img src="reslo3.png" class="h-10" alt="" />
+            <div>
+              <p class="font-bold">Food Worl</p>
+              <p class="text-yellow-400">⭐ 46</p>
+            </div>
+          </div>
+          <p class="text-orange-400 bg-orange-200 rounded-md w-45 mt-3">
+            Open tomorrow
+          </p>
+        </div>
+        <!--card-->
+        <div>
+          <div class="relative">
+            <img src="c3.png" class="h-40 rounded-md" alt="" />
+            <div class="flex gap-2 absolute top-0 px-2 py-3">
+              <div
+                class="flex gap-2 py-1 text-center px-1 w-20 bg-orange-500 rounded-md"
+              >
+                <img src="token.png" class="h-3 mt-1" alt="" />
+                <p class="text-white font-bold text-sm">15% off</p>
+              </div>
+              <!--ak-->
+
+              <div
+                class="flex gap-2 py-1 items-center px-1 w-15 bg-orange-400 rounded-md"
+              >
+                <img src="clock.png" class="h-3" alt="" />
+                <p class="text-white font-bold text-sm">Fast</p>
+              </div>
+              <!--ak-->
+            </div>
+            <!--off-->
+          </div>
+          <!--img wli-->
+          <div class="flex gap-1 items-center mt-3">
+            <img src="relo4.png" class="h-10" alt="" />
+            <div>
+              <p class="font-bold">Food World</p>
+              <p class="text-yellow-400">⭐ 46</p>
+            </div>
+          </div>
+          <p class="text-orange-400 bg-orange-200 rounded-md w-45 mt-3">
+            Open tomorrow
+          </p>
+        </div>
+        <!--card-->
+        <div>
+          <div class="relative">
+            <img src="c4.png" class="h-40 rounded-md" alt="" />
+            <div class="flex gap-2 absolute top-0 px-2 py-3">
+              <div
+                class="flex gap-2 py-1 text-center px-1 w-20 bg-orange-500 rounded-md"
+              >
+                <img src="token.png" class="h-3 mt-1" alt="" />
+                <p class="text-white font-bold text-sm">15% off</p>
+              </div>
+              <!--ak-->
+
+              <div
+                class="flex gap-2 py-1 items-center px-1 w-15 bg-orange-400 rounded-md"
+              >
+                <img src="clock.png" class="h-3" alt="" />
+                <p class="text-white font-bold text-sm">Fast</p>
+              </div>
+              <!--ak-->
+            </div>
+            <!--off-->
+          </div>
+          <!--img wli-->
+          <div class="flex gap-1 items-center mt-3">
+            <img src="relo4.png" class="h-10" alt="" />
+            <div>
+              <p class="font-bold">Food Worl</p>
+              <p class="text-yellow-400">⭐ 46</p>
+            </div>
+          </div>
+          <div class="bg-gray-300 rounded-md w-25 mt-3 px-1">
+            <p class="text-green-500 font-bold">Open Now</p>
+          </div>
+        </div>
+        <!--card-->
+        <div>
+          <div class="relative">
+            <img src="egg.png" class="h-40 rounded-md" alt="" />
+            <div class="flex gap-2 absolute top-0 px-2 py-3">
+              <div
+                class="flex gap-2 py-1 text-center px-1 w-20 bg-orange-500 rounded-md"
+              >
+                <img src="token.png" class="h-3 mt-1" alt="" />
+                <p class="text-white font-bold text-sm">15% off</p>
+              </div>
+              <!--ak-->
+
+              <div
+                class="flex gap-2 py-1 items-center px-1 w-15 bg-orange-400 rounded-md"
+              >
+                <img src="clock.png" class="h-3" alt="" />
+                <p class="text-white font-bold text-sm">Fast</p>
+              </div>
+              <!--ak-->
+            </div>
+            <!--off-->
+          </div>
+          <!--img wli-->
+          <div class="flex gap-1 items-center mt-3">
+            <img src="res9.png" class="h-10" alt="" />
+            <div>
+              <p class="font-bold">Food Worl</p>
+              <p class="text-yellow-400">⭐ 46</p>
+            </div>
+          </div>
+          <div class="bg-gray-300 rounded-md w-25 mt-3 px-1">
+            <p class="text-green-500 font-bold">Open Now</p>
+          </div>
+        </div>
+        <!--card-->
+        <div>
+          <div class="relative">
+            <img src="c6.png" class="h-40 rounded-md" alt="" />
+            <div class="flex gap-2 absolute top-0 px-2 py-3">
+              <div
+                class="flex gap-2 py-1 text-center px-1 w-20 bg-orange-500 rounded-md"
+              >
+                <img src="token.png" class="h-3 mt-1" alt="" />
+                <p class="text-white font-bold text-sm">15% off</p>
+              </div>
+              <!--ak-->
+
+              <div
+                class="flex gap-2 py-1 items-center px-1 w-15 bg-orange-400 rounded-md"
+              >
+                <img src="clock.png" class="h-3" alt="" />
+                <p class="text-white font-bold text-sm">Fast</p>
+              </div>
+              <!--ak-->
+            </div>
+            <!--off-->
+          </div>
+          <!--img wli-->
+          <div class="flex gap-1 items-center mt-3">
+            <img src="res10.png" class="h-10" alt="" />
+            <div>
+              <p class="font-bold">Donut hub</p>
+              <p class="text-yellow-400">⭐ 46</p>
+            </div>
+          </div>
+          <div class="bg-gray-300 rounded-md w-25 mt-3 px-1">
+            <p class="text-green-500 font-bold">Open Now</p>
+          </div>
+        </div>
+        <!--card-->
+        <div>
+          <div class="relative">
+            <img src="bur.png" class="h-40 w-45 rounded-md" alt="" />
+            <div class="flex gap-2 absolute top-0 px-2 py-3">
+              <div
+                class="flex gap-2 py-1 text-center px-1 w-20 bg-orange-500 rounded-md"
+              >
+                <img src="token.png" class="h-3 mt-1" alt="" />
+                <p class="text-white font-bold text-sm">15% off</p>
+              </div>
+              <!--ak-->
+
+              <div
+                class="flex gap-2 py-1 items-center px-1 w-15 bg-orange-400 rounded-md"
+              >
+                <img src="clock.png" class="h-3" alt="" />
+                <p class="text-white font-bold text-sm">Fast</p>
+              </div>
+              <!--ak-->
+            </div>
+            <!--off-->
+          </div>
+          <!--img wli-->
+          <div class="flex gap-1 items-center mt-3">
+            <img src="res8.png" class="h-10" alt="" />
+            <div>
+              <p class="font-bold">Burgur hub</p>
+              <p class="text-yellow-400">⭐ 46</p>
+            </div>
+          </div>
+          <div class="bg-gray-300 rounded-md w-25 mt-3 px-1">
+            <p class="text-green-500 font-bold">Open Now</p>
+          </div>
+        </div>
+        <!--card-->
+      </div>
+      <!--grid-->
+      <div class="mt-20 text-center">
+        <a
+          href="Product.html"
+          class="text-white text-sm bg-orange-500 px-14 py-2 rounded-md active:scale-95 transition-all"
+          >View All ></a
+        >
+      </div>
+    </section>
+    <section class="sec6 mt-20">
+      <div
+        class="grid grid-cols-12 items-center lg:px-50 md:px-25 md:py-5 lg:py-10"
+      >
+        <div class="col-span-9 px-3 lg:px-0">
+          <p class="font-bold text-2xl">Search by food</p>
+        </div>
+        <div class="col-span-3 mt-10 md:mt-0 lg:mt-0">
+          <p
+            class="text-orange-400 text-sm font-bold active:scale-95 transition-all"
+          >
+            View All >
+          </p>
+        </div>
+      </div>
+      <!--uper-->
+      <div
+        class="grid grid-cols-1 lg:grid-cols-6 md:grid-cols-3 mt-10 px-0 lg:px-30"
+      >
+        <div class="place-items-center mb-3">
+          <img src="fd6.png" class="h-40" alt="" />
+          <p class="font-bold text-sm text-center mt-2">Pizza</p>
+        </div>
+        <!--card-->
+        <div class="place-items-center mb-3">
+          <img src="fd5.png" class="h-40 rounded-full" alt="" />
+          <p class="font-bold text-sm text-center mt-2">Burgur</p>
+        </div>
+        <!--card-->
+        <div class="place-items-center mb-3">
+          <img src="fd4.png" class="h-40 rounded-full" alt="" />
+          <p class="font-bold text-sm text-center mt-2">Noodle</p>
+        </div>
+        <!--card-->
+        <div class="place-items-center mb-3">
+          <img src="fd3.png" class="h-40 rounded-full" alt="" />
+          <p class="font-bold text-sm text-center mt-2">sub-sandwitch</p>
+        </div>
+        <!--card-->
+        <div class="place-items-center mb-3">
+          <img src="fd2.png" class="h-40" alt="" />
+          <p class="font-bold text-sm text-center mt-2">Chowmein</p>
+        </div>
+        <!--card-->
+        <div class="place-items-center mb-3">
+          <img src="fd1.png" class="h-40" alt="" />
+          <p class="font-bold text-sm text-center mt-2">steak</p>
+        </div>
+        <!--card-->
+      </div>
+      <!--grid-->
+    </section>
+
+    <section class="sec7 overflow-hidden">
+      <div
+        class="h-120 lg:h-142 bg-cover bg-center"
+        style="background-image: url(remove.png)"
+      >
+        <div class="px-2 py-5 md:px-45 lg:px-60 xl:px-100 lg:py-10">
+          <div
+            class="bg-white shadow-lg shadow-orange-300/70 items-center h-30 rounded-[2vw]"
+          >
+            <div
+              class="grid grid-cols-3 gap-4 lg:grid-cols-3 md:grid-cols-3 items-center px-4 lg:mt-5 gap-3"
+            >
+              <div class="flex mt-5 md:mt-2 lg:mt-6 items-center">
+                <div class="block lg:flex items-center">
+                  <img src="ttt.png" class="h-10 lg:h-15" alt="" />
+                  <p
+                    class="text-orange-500 font-bold text-sm md:text-xl lg:text-lg"
+                  >
+                    Daily Discount
+                  </p>
+                </div>
+                <div>
+                  <img src="HR.png" class="h-10" alt="" />
+                </div>
+                <!--line-->
+              </div>
+              <!--box-->
+
+              <div class="flex mt-5 md:mt-2 lg:mt-6 items-center gap-2">
+                <div class="lg:flex items-center">
+                  <img src="3dlo.png" class="h-10 lg:h-15" alt="" />
+                  <p
+                    class="text-orange-500 font-bold text-sm md:text-xl lg:text-lg"
+                  >
+                    Live tracing
+                  </p>
+                </div>
+                <div>
+                  <img src="HR.png" class="h-10" alt="" />
+                </div>
+                <!--line-->
+              </div>
+              <!--box-->
+
+              <div class="mt-5 md:mt-2 lg:mt-6">
+                <div class="lg:flex items-center">
+                  <img src="yclo.png" class="h-10 lg:h-15" alt="" />
+                  <p
+                    class="text-orange-500 font-bold text-sm md:text-xl lg:text-lg"
+                  >
+                    Quick Delivary
+                  </p>
+                </div>
+              </div>
+              <!--box-->
+            </div>
+            <!--grid-->
+          </div>
+          <!--box-->
+        </div>
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 items-center place-items-center"
+        >
+          <div class=" ">
+            <img
+              src="phone.png"
+              class="hidden md:block md:h-50 lg:block lg:h-105 md:h-95"
+              alt=""
+            />
+          </div>
+          <!--img-->
+          <div class="mt-5">
+            <p class="text-3xl font-bold text-orange-500">Install the app</p>
+            <p class="text-sm text-gray-500 mt-2">
+              It's never been easier to order food.
+            </p>
+            <p class="text-sm text-gray-500">
+              Look for the finest discounts and you'll be
+            </p>
+            <p class="text-sm text-gray-500">
+              lost in a world of delectable food.
+            </p>
+            <div class="md:flex lg:flex gap-2 mt-3">
+              <div
+                class="bg-white shadow-lg shadow-orange-300 mb-2 lg:mb-0 md:py-0 rounded-lg md:w-40 md:w-40 p-2 w-40 place-items-center py-1"
+              >
+                <div class="flex items-center gap-1">
+                  <img src="Subtract.png" class="h-5 lg:h-6" alt="" />
+                  <div>
+                    <p class="text-sm text-gray-600 text-sm md:text-sm">
+                      GET IT ON
+                    </p>
+                    <p class="font-bold text-sm md:text-sm">Google Play</p>
+                  </div>
+                  <!--p-->
+                </div>
+                <!--icon-->
+              </div>
+              <!--butbox-->
+              <div
+                class="bg-white shadow-lg shadow-orange-300 rounded-lg md:h-10 md:w-40 w-40 place-items-center md:py-0 p-3 py-1"
+              >
+                <div class="flex items-center gap-1">
+                  <img src="Apple logo.png" class="h-5 md:h-5 lg:h-5" alt="" />
+                  <div>
+                    <p class="text-sm lg:text-sm md:text-sm text-gray-600">
+                      Download on the
+                    </p>
+                    <p class="text-sm font-bold md:text-sm lg:text-sm">
+                      App Store
+                    </p>
+                  </div>
+                  <!--p-->
+                </div>
+                <!--icon-->
+              </div>
+              <!--butbox-->
+            </div>
+            <!--but-->
+          </div>
+          <!--side content-->
+        </div>
+        <!--iphone-->
+      </div>
+    </section>
+
+    <section class="sec8 mt-20 place-items-center p-3">
+      <div
+        class="bg-white h-60 sm:h-60 sm:w-[750px] w-full rounded-lg shadow-xl shadow-white-900/80 outline outline-red-500 overflow-hidden"
+      >
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-20 items-center">
+          <div class="col-span-12 sm:col-span-4 px-3 p-4 sm:px-3 sm:p-0">
+            <div class="flex gap-1">
+              <p class="font-bold text-2xl">Best deals</p>
+              <p class="text-orange-500 font-bold text-2xl">Crispy</p>
+            </div>
+            <!--p-->
+            <p class="font-bold text-orange-500 text-2xl">Sandwiches</p>
+            <p class="text-sm text-gray-600 mt-3">
+              Enjoy the large size of sandwiches.
+            </p>
+            <p class="text-sm text-gray-600">
+              Complete perfect slice of sandwiches.
+            </p>
+            <button
+              class="font-bold bg-orange-500 text-white mt-5 sm:mt-5 text-sm rounded-md py-2 px-0 sm:px-10 active:scale-95 transition-all"
+            >
+              Proceed To Order >
+            </button>
+          </div>
+          <!--span-->
+          <div class="hidden lg:block md:block col-span-8">
+            <!--height or width full krny or overflow hidden krny sy set ho jti hn-->
+            <img
+              src="rsan.png"
+              class="h-[40vh] w-full hidden md:block rounded-r-lg object-contain"
+              alt=""
+            />
+          </div>
+          <!--span-->
+        </div>
+        <!--grid-->
+      </div>
+      <!--box-->
+      <div
+        class="bg-white sm:h-60 sm:w-[750px] w-full mt-10 rounded-lg shadow-xl shadow-white-900 overflow-hidden outline outline-red-500"
+      >
+        <!-- or width ko w-[100px] ma hi dyna theek hn yhi sai kam kreta hn yahi rule hn-->
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-5 items-center">
+          <div class="hidden lg:block md:block col-span-8">
+            <!--height or width full krny or overflow hidden krny sy set ho jti hn-->
+            <img
+              src="rch.png"
+              class="h-[40vh] w-full rounded-l-lg object-cover"
+              alt=""
+            />
+          </div>
+          <!--span-->
+          <div class="col-span-12 sm:col-span-4 px-3 p-4 sm:px-3 sm:p-0">
+            <div class="flex gap-1">
+              <p class="font-bold text-2xl">Celebrate</p>
+              <p class="text-orange-500 font-bold text-2xl">Crispy</p>
+            </div>
+            <!--p-->
+            <div class="flex gap-1">
+              <p class="font-bold text-2xl">with</p>
+              <p class="text-orange-500 font-bold text-2xl">Fried chicken</p>
+            </div>
+            <!--p-->
+
+            <p class="text-sm text-gray-600 mt-3">
+              Enjoy the large size of sandwiches. Complete perfect slice of
+              sandwiches.
+            </p>
+            <button
+              class="font-bold bg-orange-500 text-white mt-5 text-sm rounded-md py-2 px-0 md:px-10 active:scale-95 transition-all"
+            >
+              Proceed To Order >
+            </button>
+          </div>
+          <!--span-->
+        </div>
+        <!--grid-->
+      </div>
+      <!--box-->
+      <!-- responsive ky lia is ki width ko full rakh dia hn jis sy wo auto adjust g-->
+      <div
+        class="bg-white h-60 md:h-60 md:w-[750px] w-full rounded-lg mt-10 shadow-xl shadow-white-900/80 outline outline-red-500 overflow-hidden"
+      >
+        <div class="grid grid-cols-1 sm:grid-cols-12 gap-20 items-center">
+          <div class="col-span-12 sm:col-span-4 px-3 p-4 md:px-3 md:p-0">
+            <p class="font-bold text-orange-500 text-2xl">Wanna eat hot</p>
+            <div class="flex gap-1">
+              <p class="font-bold text-2xl">& Spicy</p>
+              <p class="text-orange-500 font-bold text-2xl">Pizza</p>
+            </div>
+            <!--p-->
+            <p class="text-sm text-gray-600 mt-3">
+              Enjoy the large size of sandwiches.
+            </p>
+            <p class="text-sm text-gray-600">
+              Complete perfect slice of sandwiches.
+            </p>
+            <button
+              class="font-bold bg-orange-500 text-white mt-5 md:mt-5 text-sm rounded-md py-2 px-0 md:px-10 active:scale-95 transition-all"
+            >
+              Proceed To Order >
+            </button>
+          </div>
+          <!--span-->
+          <div class="hidden lg:block md:block col-span-8">
+            <!--height or width full krny or overflow hidden krny sy set ho jti hn-->
+            <img
+              src="rpiz.png"
+              class="h-[40vh] w-full hidden sm:block rounded-r-lg object-contain"
+              alt=""
+            />
+          </div>
+          <!--span-->
+        </div>
+        <!--grid-->
+      </div>
+      <!--box-->
+    </section>
+
+    <section class="sec9 mt-10 text-center">
+      <div class="py-20">
+        <p class="font-bold text-white text-4xl">Are you ready to order with</p>
+        <p class="font-bold text-white text-4xl">the best deals ?</p>
+        <button
+          class="font-bold bg-orange-500 text-white mt-5 text-sm rounded-md py-2 px-0 md:px-5 active:scale-95 transition-all"
+        >
+          Proceed To Order >
+        </button>
+      </div>
+    </section>
+    <section class="sec10 px-3 py-5 lg:px-25 lg:py-10">
+      <p class="text-white font-bold">Our top cities</p>
+      <div class="grid grid-cols-3 lg:grid-cols-5 mt-10 gap-2">
+        <div class="text-gray-300 text-sm">
+          <p>San Francisco</p>
+          <p>Miami</p>
+          <p>San Diego</p>
+          <p>Long Beach</p>
+        </div>
+        <div class="text-gray-300 text-sm">
+          <p>Los Angeles</p>
+          <p>Washington DC</p>
+          <p>Seattle</p>
+          <p>Nashville</p>
+        </div>
+        <div class="text-gray-300 text-sm">
+          <p>New York City</p>
+          <p>Atlanta</p>
+          <p>Charlotte</p>
+          <p>Denver</p>
+        </div>
+        <div class="text-gray-300 text-sm mt-2 lg:mt-0">
+          <p>Chicago</p>
+          <p>Phoenix</p>
+          <p>Sacramento</p>
+          <p>Las Vegas</p>
+        </div>
+        <div class="text-gray-300 text-sm mt-2 lg:mt-0">
+          <p>Columbus</p>
+          <p>Sacramento</p>
+          <p>Albuquerque</p>
+          <p>Sacramento</p>
+        </div>
+      </div>
+      <div class="border border-b-gray-300 mt-20 xl:w-250"></div>
+
+      <div class="grid grid-cols-3 lg:grid-cols-4 mt-10 gap-2 p-5">
+        <div>
+          <p class="text-white font-bold">Company</p>
+          <p class="text-sm text-gray-300 mt-5">About us</p>
+          <p class="text-sm text-gray-300">Team</p>
+          <p class="text-sm text-gray-300">Career</p>
+          <p class="text-sm text-gray-300">Blogs</p>
+        </div>
+        <div>
+          <p class="text-white font-bold">Contact</p>
+          <p class="text-sm text-gray-300 mt-5">Help & Support</p>
+          <p class="text-sm text-gray-300">Partner with us</p>
+          <p class="text-sm text-gray-300">Ride with us</p>
+        </div>
+        <div>
+          <p class="text-white font-bold">Legal</p>
+          <p class="text-sm text-gray-300 mt-5">Terms & Conditions</p>
+          <p class="text-sm text-gray-300">Refund & Cancellation</p>
+          <p class="text-sm text-gray-300">Privacy Policy</p>
+          <p class="text-sm text-gray-300">Cookie Policy</p>
+        </div>
+        <div>
+          <p class="text-gray-300 font-bold mt-10 lg:mt-0">Follow us</p>
+          <div class="flex gap-5 mt-5">
+            <img src="insg.png" class="" alt="" />
+            <img src="fbg.png" alt="" />
+            <img src="tiwg.png" alt="" />
+          </div>
+          <!--img-->
+          <p class="text-sm text-gray-300 mt-5">
+            Receive exclusive offers in your mailbox
+          </p>
+          <div class="flex gap-2 items-center mt-5">
+            <div class="">
+              <div
+                class="flex gap-2 items-center bg-gray-600 rounded-sm px-3 py-3 w-40"
+              >
+                <img src="envelope.png" class="h-4" alt="" />
+                <input
+                  type="Email"
+                  placeholder="Enter your email"
+                  class="text-white outline-none"
+                />
+              </div>
+              <!--flex-->
+            </div>
+            <!--col-->
+            <div class=" ">
+              <button
+                class="bg-yellow-500 shadow-lg shadow-yellow-400/50 text-white font-bold text-sm active:scale-95 rounded-sm px-3 py-3"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <!--span-->
+        </div>
+        <!--side-->
+      </div>
+      <!--nextcard-->
+      <div class="border border-b-gray-300 mt-5 xl:w-270"></div>
+      <div class="md:flex md:gap-50 lg:flex lg:gap-130 mt-3 items-center">
+        <div>
+          <p class="text-white text-sm">
+            All rights Reserved © copyright Your Company, 2021
+          </p>
+        </div>
+        <div class="flex gap-2 mt-3 md:mt-0 lg:mt-0">
+          <p class="text-white text-sm">Made with 💛 by</p>
+          <p class="font-bold text-white text-sm">Themewagon</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
